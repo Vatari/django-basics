@@ -1,5 +1,5 @@
 """
-URL configuration for django101 project.
+URL configuration for django_01 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -20,11 +20,11 @@ from django.urls import path, include
 urlpatterns = (
     path("admin/", admin.site.urls),
 
-    # prefix "" for all URLs in `django101.tasks.urls`, i.e. no prefix
-    path("", include("django101.tasks.urls")),
+    # prefix "" for all URLs in `django_01.tasks.urls`, i.e. no prefix
+    path("", include("django_01.tasks.urls")),
 
-    # prefix "ala-bala/" for all URLs in `django101.tasks.urls`
-    path("ala-bala/", include("django101.tasks.urls")),
+    # prefix "ala-bala/" for all URLs in `django_01.tasks.urls`
+    path("ala-bala/", include("django_01.tasks.urls")),
 )
 
 # https://HOST:PORT/FULL/PATH?query=params&other=other_params#fragment
